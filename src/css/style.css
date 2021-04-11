@@ -1,0 +1,133 @@
+/* global */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header,
+footer,
+.wrapper {
+  text-align: center;
+}
+
+/* header */
+
+header {
+  background-color: black;
+  padding: 15px;
+}
+
+header img {
+  width: 60px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+header a:hover {
+  color: white;
+  background-color: tomato;
+}
+
+/*section*/
+
+section.accueil-articles p {
+  text-align: justify;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/*footer*/
+
+footer {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  color: white;
+  /* padding: 20px 0; */
+  text-align: center;
+  left: 0%;
+  margin-bottom: 0%;
+  /* margin-top: 90%; */
+}
+
+/* blog */
+
+.card-image img {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  max-width: 800px;
+  gap: 40px;
+}
+
+.card {
+  grid-column: span 12;
+}
+
+section.wrapper-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* contact */
+section.wrapper-contact {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+input,
+textarea,
+label {
+  display: block;
+  margin: 20px 0;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+textarea,
+input#email {
+  background-color: #215aa7;
+  margin-top: 5px;
+  border: none;
+}
+textarea {
+  width: 100%;
+}
+
+input#email {
+  width: 50%;
+  height: 30px;
+}
+
+input#submit {
+  background-color: #e32e3d;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    grid-column: span 3;
+  }
+}
